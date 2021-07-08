@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Tous nos appartements</h1>
+      <p>Nous avons <%= @flats.count %> appartements disponnibles</p>
+    </div>
+  </div>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-4">
+        <div class="flat-card">
+          <div class="flat-card-content">
+            <div class="flat-card-title">
+              <h4><%= flat.name %></h4>
+            </div>
+            <p><%= flat.address %></p>
+            <div class="flex">
+              <i class="fas fa-user-alt"></i>
+              <span><%= flat.price_per_night %></span>
+              <span>&nbsp&nbsp</span>
+              <i class="fas fa-euro-sign"></i>
+              <span><%= flat.number_of_guests %></span>
+            </div>
+          </div>
+          <div class="flat-card-actions">
+            <%= link_to "More info", flat %>
+          </div>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

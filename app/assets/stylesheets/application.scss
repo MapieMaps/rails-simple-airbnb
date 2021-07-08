@@ -1,0 +1,40 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.container {
+  margin-top: 64px;
+}
+
+.flat-card {
+  // margin-top: 32px;
+  // background: rgb(230,230,230);
+  // padding: 32px;
+  // border-radius: 16px 16px 0 0;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 16px;
+}
+
+.flat-card-content {
+  margin-top: 32px;
+  padding: 32px;
+}
+
+.flat-card-actions {
+  padding: 0 32px 16px 32px;
+}
+
+.flat-card-actions a {
+  text-decoration: none;
+}
